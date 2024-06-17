@@ -66,8 +66,8 @@ export const post2Style: CSSProperties = {
   width: "150px",
   height: "auto",
   objectFit: "cover",
-  margin : "auto",
-  paddingLeft : "20vw",
+  margin: "auto",
+  paddingLeft: "20vw",
 };
 // 왼쪽 포스트
 export const post3Style: CSSProperties = {
@@ -88,7 +88,7 @@ export const typographyBoxStyle: CSSProperties = {
   padding: "70px 50px 50px 50px",
   fontSize: "8rem",
   fontFamily: "Rubik Lines",
-  color : root.white,
+  color: root.white,
   boxSizing: "border-box",
   display: "flex",
   flexDirection: "column",
