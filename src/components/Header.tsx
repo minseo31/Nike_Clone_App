@@ -17,7 +17,7 @@ const Header: React.FC = () => {
       return (
         // to={`/${data}`} : 라우트 경로를 지정
         <Link key={i} to={`/${data}`} style={headerNaviListStyle}>
-          {(i === 0) ? "Home" : data}
+          {i === 0 ? "Home" : data}
         </Link>
       );
     }
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
       <div style={headerLeftContentStyle}>
         <img
           style={headerLogoStyle}
-          src="/image/Nike-Logo.png"
+          src="/image/logo/Nike-Logo.png"
           alt="NIKE LOGO"
         />
         <ul style={headerNaviStyle}>{naviElements}</ul>
