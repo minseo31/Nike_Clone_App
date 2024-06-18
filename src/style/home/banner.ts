@@ -5,105 +5,105 @@ import { root } from "../root";
 export const bannerStyle: CSSProperties = {
   width: root.viewWidth,
   height: root.viewHeight,
-  padding: "50px",
+  padding: root.px50,
   paddingTop: "70px",
-  boxSizing: "border-box",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: root.black,
-  position: "relative",
+  boxSizing: root.box_border,
+  display: root.flex,
+  justifyContent: root.center,
+  alignItems: root.center,
+  backgroundColor: root.black100,
+  position: root.relative,
 };
 
 // 비디오
 export const videoStyle: CSSProperties = {
   width: "70%",
-  height: "auto",
+  height: root.auto,
 };
 
 // 포스트 박스
 export const postBoxStyle: CSSProperties = {
-  position: "absolute",
-  top: 0,
-  bottom: 0,
-  left: 0,
-  right: 0,
-  width: "100%",
-  height: "100%",
-  padding: "70px 50px 50px 50px",
+  position: root.absolute,
+  top: root.zero,
+  bottom: root.zero,
+  left: root.zero,
+  right: root.zero,
+  width: root.fullSize,
+  height: root.fullSize,
+  padding: `70px ${root.px50} ${root.px50} ${root.px50}`,
   opacity: 0.7,
-  boxSizing: "border-box",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  alignItems: "end",
+  boxSizing: root.box_border,
+  display: root.flex,
+  flexDirection: root.column,
+  justifyContent: root.between,
+  alignItems: root.end,
 };
 
 // 오른쪽 포스트
 export const post1Style: CSSProperties = {
   width: "300px",
-  height: "auto",
-  objectFit: "cover",
+  height: root.auto,
+  objectFit: root.cover,
 };
 
 // 왼쪽 / 가운데 포스트 박스
 export const post23BoxStyle: CSSProperties = {
-  width: "100%",
-  height: "100%",
-  position: "absolute",
-  top: 0,
-  right: 0,
-  padding: "70px 50px 50px 50px",
-  boxSizing: "border-box",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
+  width: root.fullSize,
+  height: root.fullSize,
+  position: root.absolute,
+  top: root.zero,
+  right: root.zero,
+  padding: `70px ${root.px50} ${root.px50} ${root.px50}`,
+  boxSizing: root.box_border,
+  display: root.flex,
+  flexDirection: root.column,
+  justifyContent: root.between,
   alignItems: "start",
 };
 
 // 가운데 포스트
 export const post2Style: CSSProperties = {
   width: "150px",
-  height: "auto",
-  objectFit: "cover",
-  margin: "auto",
+  height: root.auto,
+  objectFit: root.cover,
+  margin: root.auto,
   paddingLeft: "20vw",
 };
 // 왼쪽 포스트
 export const post3Style: CSSProperties = {
   width: "250px",
-  height: "auto",
-  objectFit: "cover",
+  height: root.auto,
+  objectFit: root.cover,
 };
 
 // 타이포그래피 박스
 export const typographyBoxStyle: CSSProperties = {
   position: "absolute",
-  top: 0,
-  bottom: 0,
-  left: 0,
-  right: 0,
-  width: "100%",
-  height: "100%",
-  padding: "70px 50px 50px 50px",
+  top: root.zero,
+  bottom: root.zero,
+  left: root.zero,
+  right: root.zero,
+  width: root.fullSize,
+  height: root.fullSize,
+  padding: `70px ${root.px50} ${root.px50} ${root.px50}`,
   fontSize: "8rem",
-  fontFamily: "Rubik Lines",
+  fontFamily: root.roubik_Lines,
   color: root.white,
-  boxSizing: "border-box",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
+  boxSizing: root.box_border,
+  display: root.flex,
+  flexDirection: root.column,
+  justifyContent: root.between,
 };
 
 // 타이포그래피 왼쪽 상단
 export const typographyLeftStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
+  display: root.flex,
+  flexDirection: root.column,
 };
 
 // 타이포그래피 오른쪽 하단
 export const typographyRightStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  textAlign: "end",
+  display: root.flex,
+  flexDirection: root.column,
+  textAlign: root.end,
 };

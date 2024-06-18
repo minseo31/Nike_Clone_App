@@ -35,7 +35,7 @@ const Banner: React.FC = () => {
       typographyRef4.current
     ) {
       const typographyRefs: TypographyRefsType[] = [
-        // 타이포그래피 데이터
+        // 타이포그래피 데이터 - 데이터 폴더로 분리하고 싶은데 ref가 걸려서 애매함 해결방안 생각중
         {
           ref: typographyRef1,
           startText: "YOU CAN'T STOP US",
