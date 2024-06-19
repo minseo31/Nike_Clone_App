@@ -116,6 +116,7 @@ http://batino.co.kr/brand/ GSAP 라이브러리 및 상품 예시 사이트
 https://wrapstudio.co.kr/ 레이아웃 예시 사이트 (정적)
 https://www.vibey.co.kr/ 레이아웃 예시 사이트 (동적)
 https://wch.eqlstore.com/main 상품 예시 사이트
+https://ba-ton.kr/ 상품 페이지 레이아웃 예시 사이트
 
 # git
 
