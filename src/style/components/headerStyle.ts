@@ -56,3 +56,8 @@ export const headerDetailsListStyle: CSSProperties = {
   fontWeight: root.bold,
   fontSize: root.font12,
 };
+
+export const headerFooterIconStyle : CSSProperties = {
+  fontSize : '30px',
+  cursor : 'pointer',
+}

@@ -15,11 +15,6 @@ export const bannerStyle: CSSProperties = {
   position: root.relative,
 };
 
-// 비디오
-export const videoStyle: CSSProperties = {
-  width: "70%",
-  height: root.auto,
-};
 
 // 포스트 박스
 export const postBoxStyle: CSSProperties = {

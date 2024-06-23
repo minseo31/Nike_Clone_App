@@ -1,3 +1,4 @@
+import { MdArrowDropUp } from "react-icons/md"; // 푸터 숨김 아이콘
 import {
   footerStyle,
   footerLogoStyle,
@@ -7,9 +8,12 @@ import {
   footerTitleStyle,
   footerItemStyle,
   footerPolicyStyle,
+  footerHiddenStyle,
+  footerDeleteIconStyle,
 } from "../style/components/footerStyle";
 import { footerData } from "../data/footerData"; // 푸터 데이터
 import { Link } from "react-router-dom";
+import { footerhandleClick } from "../event/footerClickhandle";
 
 // 상품 데이터 타입
 type ProductType = {
@@ -43,7 +47,13 @@ type PolicyType = {
   to: string;
 };
 
-const Footer: React.FC = () => {
+// props 타입
+type PropsType = {
+  isFooter: boolean;
+  setIsFooter: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Footer: React.FC<PropsType> = ({ isFooter, setIsFooter }: PropsType) => {
   // 리스트 렌더링 함수
   function makeList(datas: ProductType[] | InformationType[]): JSX.Element[] {
     return datas.map((data: ProductType | InformationType): JSX.Element => {
@@ -76,8 +86,11 @@ const Footer: React.FC = () => {
     }
   );
 
+  
+
   return (
-    <footer style={footerStyle}>
+    // 푸터 등장 상태에 따라 숨김처리 스타일
+    <footer style={isFooter ? footerStyle : footerHiddenStyle}>
       <img
         style={footerLogoStyle}
         src="/image/logo/Nike-Logo2.png"
@@ -88,6 +101,12 @@ const Footer: React.FC = () => {
         <div style={footerContentBoxStyle}>{informationElement}</div>
         <ul style={footerPolicyStyle}>{policyElement}</ul>
       </div>
+      <MdArrowDropUp
+        style={footerDeleteIconStyle}
+        onClick={() => {
+          footerhandleClick(setIsFooter);
+        }}
+      />
     </footer>
   );
 };

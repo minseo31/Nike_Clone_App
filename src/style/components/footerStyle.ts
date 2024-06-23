@@ -6,19 +6,35 @@ export const footerStyle: CSSProperties = {
   width: root.viewWidth,
   height: root.viewHeight,
   backgroundColor: root.black100,
-  position: root.absolute,
+  position: root.fixed,
   zIndex: root.z999,
-//   bottom: root.viewHeight,
+  bottom: root.zero,
   left: root.zero,
   right: root.zero,
   display: root.flex,
   justifyContent: root.center,
-  //   alignItems: root.center,
   gap: root.px100,
   padding: root.px50,
   boxSizing: root.box_border,
-  transition: "all 0.5s",
+  transition: "all 0.7s",
 };
+// 푸터 숨김처리
+export const footerHiddenStyle : CSSProperties = {
+  width: root.viewWidth,
+  height: root.viewHeight,
+  backgroundColor: root.black100,
+  position: root.fixed,
+  zIndex: root.z999,
+  bottom: root.viewHeight,
+  left: root.zero,
+  right: root.zero,
+  display: root.flex,
+  justifyContent: root.center,
+  gap: root.px100,
+  padding: root.px50,
+  boxSizing: root.box_border,
+  transition: "all 0.7s",
+}
 
 // 푸터 로고
 export const footerLogoStyle: CSSProperties = {
@@ -81,3 +97,10 @@ export const footerPolicyStyle: CSSProperties = {
   fontSize: root.font12,
   justifyContent: root.between,
 };
+
+// 뒤로가기 아이콘
+export const footerDeleteIconStyle : CSSProperties = {
+  fontSize : '30px',
+  fill : root.white,
+  cursor : 'pointer',
+}
