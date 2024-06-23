@@ -186,4 +186,4 @@ https://wch.eqlstore.com/main 상품 예시 사이트
 Product.tsx: 제품이 나오는 메인 페이지 구현. 사이드바와 상품이 겹치므로 수정해야합니다.
 FilterSideBar.tsx: 카테고리 및 필터를 구현. Category.ts(style) 수정 필요
 
-커밋 내용 쓸 시간이 없으므로 오늘내로 정리해서 올리겠어요 ㅠㅠ
+커밋 내용 쓸 시간이 없으므로 오늘내로 정리해서 올리겠어요...
