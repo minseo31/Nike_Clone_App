@@ -3,10 +3,12 @@ import { fadeInGSAP } from "../../animation/fadeIn";
 import LoadingPage from "../LoadingPage";
 import Login from "../../components/member/login/Login";
 import SignUp from "../../components/member/signup/SignUp";
+import Profile from "../../components/member/profile/Profile";
 
 const MenberPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true); // 로딩 값
   const [isSignUp, setIsSignUp] = useState<boolean>(false); // 회원가입 박스 등장 상태 값
+  const [isLogin, setIsLogin] = useState<boolean>(false); // 로그인 여부
   const pageRef = useRef<HTMLDivElement>(null); // 페이지 엘리먼트
 
   // 컴포넌트 로드 시간 지연
@@ -31,8 +33,10 @@ const MenberPage: React.FC = () => {
         <LoadingPage />
       ) : (
         <div ref={pageRef}>
-          <Login setIsSignUp={setIsSignUp}/>
+          {/* 회원가입 모달  */}
           {isSignUp ? <SignUp setIsSignUp={setIsSignUp} /> : null}
+          {/* 로그인 중이라면 프로필를 / 로그인 중이 아니라면 로그인을 */}
+          {isLogin ? <Profile /> : <Login setIsSignUp={setIsSignUp} />};
         </div>
       )}
     </>
